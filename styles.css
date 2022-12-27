@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    block-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 450px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+.content{
+    padding: 7%;
+    text-align: center;
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.para{
+    padding: 0 7%;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.plan_box{
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan_box_left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.plan_box_left section{
+    margin-left: 20px;
+}
+.plan_box_left h5{
+    line-height: 1.5;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 18px;
+}
+.plan_box_left p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.change_link{
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    transition: color .3s ease;
+}
+.change_link:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.proceed_btn{
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin: 60px 25px 20px;
+    padding: 12px;
+    font-weight: 900;
+    transition: background-color .3s ease;
+}
+.proceed_btn:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+.cancel_btn{
+    text-decoration: none;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    transition: color .3s ease;
+}
+.cancel_btn:hover{
+    color: black;
+}
+
+@media only screen and (max-width: 425px) {
+    .container{
+        max-width: 87%;
+        padding-bottom: 30px;
+    }
+
+    .title{
+        font-size: 23px;
+        padding-top: 20px;
+    }
+
+    .content{
+        padding: 0;
+    }
+
+    .para{
+        padding: 0 8%;
+    }
+
+    .plan_box{
+        margin: 0 8%;
+        padding: 5%;
+    }
+
+    .plan_box_left h5{
+        font-size: 15px;
+    }
+
+    /* .change_link{
+       position: absolute;
+       right: 7%;
+    } */
+}
